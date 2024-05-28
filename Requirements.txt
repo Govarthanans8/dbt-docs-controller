@@ -1,0 +1,3 @@
+# Requirements for dbt-docs-controller package
+# No additional dependencies are needed beyond the standard library
+python_requires='>=3.6'
