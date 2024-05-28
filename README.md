@@ -7,15 +7,14 @@
 In standard dbt-docs, documentation is generated for the entirety of your dbt project, including:
 - All models
 - All sources
-- All tests
 - All macros
 
-This approach might be overwhelming for end-users who are only interested in a specific part of your project. `dbt-docs-controller` addresses this by allowing you to generate documentation for only the relevant models and components that your end-users will actually interact with.
+This approach might be overwhelming for end-users who are only interested in a specific part of your project. `dbt-docs-controller` addresses this by allowing you to generate documentation for only the relevant models and components that your end-users will actually interact with. This CLI empowers users to selectively include only the models, sources, packages, or combinations thereof that are relevant to their needs. Whether users require documentation for a single model, a group of sources, specific packages, or custom combinations, dbt-docs-controller makes the process effortless and efficient.
 
 ### 🔑✨Key Features:
-- **Selective Documentation**: Generate documentation only for the models, sources, tests, and macros that you choose.
+- **Selective Documentation**: Generate documentation for specific models, sources, packages, or custom combinations thereof.
 - **Simplified Output**: Create a cleaner, more focused dbt-docs site by excluding unnecessary nodes.
 - **Easy to Use**: Simple CLI interface for quick integration into your existing dbt workflow.
 
 ### ⚙️💡How It Works:
-`dbt-docs-controller` works by editing the `manifest.json` file used by the dbt-docs site. It modify nodes that you do not wish to display, resulting in a documentation site that is tailored to your needs.
+`dbt-docs-controller` works by editing the `manifest.json` file used by the dbt-docs site. By selectively modifying the file based on user input, the tool ensures that only the specified components are included in the final documentation site, resulting in a documentation site that is precisely tailored to meet your specific needs and preferences.
